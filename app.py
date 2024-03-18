@@ -35,10 +35,14 @@ def hello_world(jobrole):
         model="gpt-3.5-turbo",
         messages=[{
             "role": "system",
-            "content": f"what are the major skills of: {jobrole}, and which questions for a job interview should I prepare for"
+            "content": f"what are the major skills of: {jobrole}, and which questions for a job interview should I prepare for? Give me back in HTML format"
         }],
         temperature=0.5,
         max_tokens=256
     )
-    #print(response)
+    print(response.choices[0].message.content)
+    print(type(response.choices[0].message.content))
     return response.choices[0].message.content
+
+
+hello_world('java developer')
