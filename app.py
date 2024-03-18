@@ -35,7 +35,7 @@ def hello_world(jobrole):
         model="gpt-3.5-turbo",
         messages=[{
             "role": "system",
-            "content": f"what are the major skills of: {jobrole}, and which questions for a job interview should I prepare for? Give me back in HTML format"
+            "content": f"what are the major skills of: {jobrole}, and which five questions for a job interview should I prepare for, give me back in HTML format"
         }],
         temperature=0.5,
         max_tokens=256
