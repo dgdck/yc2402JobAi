@@ -25,7 +25,7 @@ aikey = os.environ.get('OURENVKEY')
 
 @app.route("/")
 def hello():
-    return "<h1>Hello World!</h1>" + aikey
+    return "<h1>Hello World!</h1>"
 
 
 @app.route("/<jobrole>")
