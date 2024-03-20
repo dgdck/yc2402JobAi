@@ -38,7 +38,7 @@ def hello_world(jobrole):
             "content": f"what are the major skills of: {jobrole}, and which five questions for a job interview should I prepare for, give me back in HTML format"
         }],
         temperature=0.5,
-        max_tokens=256
+        max_tokens=3000
     )
     print(response.choices[0].message.content)
     print(type(response.choices[0].message.content))
